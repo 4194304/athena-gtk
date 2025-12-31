@@ -3,16 +3,6 @@
 @define-color theme_selected_base_color black;
 @define-color theme_selected_text_color white;
 
-@define-color window_bg_color #ffffff;
-@define-color theme_bg_color  #ffffff;
-@define-color view_bg_color   #ffffff;
-@define-color menu_bg_color   #ffffff;
-@define-color popover_bg_color #ffffff;
-
-@define-color theme_fg_color  #000000;
-@define-color view_fg_color   #000000;
-@define-color menu_fg_color   #000000;
-
 * {
 	font-weight:bold;
 }
@@ -180,7 +170,6 @@ toolbar button {
 }
 menuitem {
 	padding:3px;
-	background-color:white;
 }
 menuitem:hover {
 	background-color:black;
@@ -240,14 +229,15 @@ toolbar {
 spinner:disabled {
 	background-image:none;
 }
+
+/* If you want menu separators comment this out */
 menu separator {
 	box-shadow:none;
 	border:none;
-	background-color:white;
+	background-color:rgba(0,0,0,0);
 }
+
+
 statusbar frame {
 	border:none;
-}
-popover.background, window.popup {
-	background-color:white;
 }
